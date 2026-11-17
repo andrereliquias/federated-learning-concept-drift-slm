@@ -1,0 +1,113 @@
+{
+  "unicos": 529,
+  "unicos_colecao": 529,
+  "ocorr_scopus": 235,
+  "ocorr_ieee": 396,
+  "ocorr_acm": 8,
+  "ocorrencias": 639,
+  "redundantes": 110,
+  "incluir_preliminar": 70,
+  "excluir": 177,
+  "incerto": 53,
+  "pretriagem_aguardando_validacao": 10,
+  "nao_avaliado": 219,
+  "decisoes": 300,
+  "pre_analisados": 310,
+  "fase_titulo_resumo": 117,
+  "fase_texto_completo": 183,
+  "acesso_llm": 222,
+  "acesso_pendente": 12,
+  "com_recomendacao_inicial": 310,
+  "inc_texto_completo": 37,
+  "inc_titulo_resumo": 33,
+  "inc_elegiveis_amostra": 28,
+  "amostra": 10,
+  "inc_periodico": 43,
+  "inc_conferencia": 27,
+  "am_periodico": 8,
+  "am_conferencia": 2,
+  "inc_2025_2026": 52,
+  "unicos_2025_2026": 397,
+  "inc_multibase": 34,
+  "inc_titulo_forecast": 6,
+  "inc_titulo_forecast_tc": 1,
+  "inc_titulo_forecast_ids": [
+    "EM01-S0056",
+    "EM01-S0083",
+    "EM01-S0119",
+    "EM01-S0149",
+    "EM01-S0219",
+    "EM01-S0227"
+  ],
+  "combos": {
+    "IEEE;SCOPUS": 101,
+    "ACM;SCOPUS": 5,
+    "SCOPUS": 127,
+    "ACM;IEEE;SCOPUS": 2,
+    "IEEE": 293,
+    "ACM": 1
+  },
+  "controle_id": "EM01-S0227",
+  "controle_situacao": "incluir_preliminar",
+  "excl_multicriterio": 14,
+  "excl_sem_criterio": 0,
+  "excl_por_criterio": {
+    "CE2": 47,
+    "CE1": 54,
+    "CE3": 23,
+    "CE7": 51,
+    "CE4": 16
+  },
+  "exibidos_scopus": 235,
+  "exibidos_ieee": 396,
+  "exibidos_acm": 8,
+  "ext_registros": 70,
+  "ext_reported": 39,
+  "ext_interpreted": 21,
+  "ext_unclear": 10,
+  "ext_fonte_llm": 41,
+  "ext_fonte_resumo": 29,
+  "rq1_tarefas": {
+    "Classification": 5,
+    "Intrusion detection": 2,
+    "Not identified": 1,
+    "Anomaly detection": 1,
+    "Other (survival)": 1
+  },
+  "rq1_dominios": {
+    "Stream benchmarks": 3,
+    "Networks and security": 3,
+    "Edge computing": 1,
+    "Human activity": 1,
+    "Industrial sensing": 1,
+    "Healthcare": 1
+  },
+  "rq1_familias": {
+    "Prototypes": 2,
+    "Recurrent network": 2,
+    "Continual learning with replay": 2,
+    "Attention network": 1,
+    "Density sketch": 1,
+    "Adaptive P2P topology": 1,
+    "Reinforcement learning (bandit)": 1
+  },
+  "rq1_topologias": {
+    "Server": 5,
+    "Communities": 1,
+    "P2P/gossip": 3,
+    "Server + groups": 1
+  },
+  "rq1_representacao": {
+    "Ordered stream": 6,
+    "Explicit sequence": 4
+  },
+  "rq1_dimensao": {
+    "Not identified": 7,
+    "Multivariate": 3
+  },
+  "rq1_particao": {
+    "Horizontal": 8,
+    "Not identified": 2
+  },
+  "rq1_ci2_interpretado": 4
+}

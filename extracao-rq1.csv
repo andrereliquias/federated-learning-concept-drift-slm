@@ -1,0 +1,71 @@
+study_id,field,value,source_path,locator,evidence_excerpt,status,reviewed_by,review_date,review_approval
+EM01-S0070,ts_task,classificacao,resumo + analise_llm_pdf,resumo; secao 5.3 p. 13; Figs. 3-4 p. 16,"""federated semi-supervised evolving data stream environment""; avaliacao interleaved test-then-train com acuracia ao longo do fluxo",interpreted,,,nao_revisado
+EM01-S0070,application_domain,benchmarks de fluxo (sem dominio unico),analise_llm_pdf,Tabela 2 p. 12,"benchmarks sinteticos com drift incremental/gradual e Electricity, entre outros reais",interpreted,,,nao_revisado
+EM01-S0070,temporal_representation,fluxo de dados ordenado,analise_llm_pdf,secao 3 p. 4; secao 4.1 p. 6,fluxo D_k com tempo de chegada e particao sequencial por intervalos,reported,,,nao_revisado
+EM01-S0070,series_dimensionality,nao identificado nas fontes consultadas,analise_llm_pdf,,dimensionalidade das series nao registrada na analise,unclear,,,nao_revisado
+EM01-S0070,federated_topology,centralizada (servidor),analise_llm_pdf,secao 4.4 pp. 8-9,FL por prototipos com servidor,reported,,,nao_revisado
+EM01-S0070,federated_setting,horizontal,analise_llm_pdf,secao 4.1 p. 6,clientes recebem particoes do mesmo fluxo; particao nao nomeada pelos autores na analise,interpreted,,,nao_revisado
+EM01-S0070,approach_family,prototipos,resumo,resumo,"""a new federated learning prototype-based method""",reported,,,nao_revisado
+EM01-S0090,ts_task,deteccao de intrusao,resumo,resumo,"""Collaborative Intrusion Detection Systems (CIDSs)""",reported,,,nao_revisado
+EM01-S0090,application_domain,redes e seguranca (IoT),resumo,resumo,"""sizable and complex IoT infrastructures""",reported,,,nao_revisado
+EM01-S0090,temporal_representation,sequencia/serie explicita,analise_llm_pdf,secao 3.1 pp. 3-4; secao 4.1 p. 5,GRU preve o pacote a partir dos vinte anteriores com janelas consecutivas,reported,,,nao_revisado
+EM01-S0090,series_dimensionality,nao identificado nas fontes consultadas,analise_llm_pdf,,representacao do pacote nao registrada na analise,unclear,,,nao_revisado
+EM01-S0090,federated_topology,por comunidades de clientes,analise_llm_pdf,secoes 4.2-4.3 pp. 6-7,federacao por comunidades; HDBSCAN na formacao/reconfiguracao das comunidades,reported,,,nao_revisado
+EM01-S0090,federated_setting,horizontal,analise_llm_pdf,secoes 4.2-4.3 pp. 6-7,modelos de deteccao de mesma estrutura agregados entre entidades; particao nao nomeada na analise,interpreted,,,nao_revisado
+EM01-S0090,approach_family,rede recorrente,analise_llm_pdf,secao 3.1 pp. 3-4,GRU sobre sequencia de pacotes,reported,,,nao_revisado
+EM01-S0104,ts_task,nao identificada,analise_llm_pdf,Tabelas 2-4 pp. 8 e seguintes,tarefas e metricas por dataset pouco claras ou contraditorias na analise,unclear,,,nao_revisado
+EM01-S0104,application_domain,computacao de borda (multiplos datasets),resumo,resumo,"""edge environments are both non-stationary and asymmetric""",interpreted,,,nao_revisado
+EM01-S0104,temporal_representation,sequencia/serie explicita,analise_llm_pdf,Eqs. 6-10; Fig. 2,encoder por passo seguido de Bi-LSTM/atencao com estados sequenciais explicitos,reported,,,nao_revisado
+EM01-S0104,series_dimensionality,nao identificado nas fontes consultadas,analise_llm_pdf,,identidade dos dados e split pouco claros na analise,unclear,,,nao_revisado
+EM01-S0104,federated_topology,centralizada (servidor),resumo,resumo,"""client-level drift detection, drift-adaptive aggregation""",interpreted,,,nao_revisado
+EM01-S0104,federated_setting,nao identificada,analise_llm_pdf,,particao entre clientes nao esclarecida na analise,unclear,,,nao_revisado
+EM01-S0104,approach_family,rede recorrente,resumo + analise_llm_pdf,resumo; Eqs. 6-10,"""attention-based time encoding""; Bi-LSTM com atencao",reported,,,nao_revisado
+EM01-S0106,ts_task,classificacao,resumo,resumo,"""Encrypted Traffic Classification""",reported,,,nao_revisado
+EM01-S0106,application_domain,redes e seguranca (trafego de borda),resumo,resumo,"""encrypted-traffic classifiers deployed at the network edge""",reported,,,nao_revisado
+EM01-S0106,temporal_representation,fluxo de dados ordenado,analise_llm_pdf,secoes 3.1/3.3 pp. 6-7,fluxo sintetico ordenado com novos dados a cada rodada,reported,,,nao_revisado
+EM01-S0106,series_dimensionality,multivariada,resumo,resumo,"""synthetic traffic-like features""",interpreted,,,nao_revisado
+EM01-S0106,federated_topology,centralizada (servidor),resumo,resumo,"""drift-aware server aggregation""",reported,,,nao_revisado
+EM01-S0106,federated_setting,horizontal,analise_llm_pdf,secao 4.2 p. 9,mesmo classificador por no com novos dados por cliente/rodada; particao nao nomeada na analise,interpreted,,,nao_revisado
+EM01-S0106,approach_family,aprendizado continuo com replay,resumo,resumo,"""selective adapter-based adaptation ... and class-balanced replay""",reported,,,nao_revisado
+EM01-S0111,ts_task,classificacao,resumo,resumo,"""human activity recognition (HAR)""",reported,,,nao_revisado
+EM01-S0111,application_domain,reconhecimento de atividades humanas,resumo,resumo,"""smartphone sensors and wearable devices""",reported,,,nao_revisado
+EM01-S0111,temporal_representation,sequencia/serie explicita,analise_llm_pdf,secao 3 p. 3320; Alg. 2 p. 3322,"janelas de sensores de 2,5 s; atencao na dimensao cronologica; fluxo online",reported,,,nao_revisado
+EM01-S0111,series_dimensionality,multivariada,resumo + analise_llm_pdf,resumo; secao 5.1 p. 3324,janelas de multiplos sensores de smartphone e vestiveis,interpreted,,,nao_revisado
+EM01-S0111,federated_topology,centralizada (servidor),resumo,resumo,"""unsupervised gradient aggregation strategy""",interpreted,,,nao_revisado
+EM01-S0111,federated_setting,horizontal,resumo,resumo,"""training data to be kept local""; clientes com os mesmos tipos de sensor; particao nao nomeada",interpreted,,,nao_revisado
+EM01-S0111,approach_family,rede neural com atencao (semissupervisionada),resumo + analise_llm_pdf,resumo; Eqs. 1-2 p. 3321,"""consistency training""; atencao na dimensao cronologica",interpreted,,,nao_revisado
+EM01-S0123,ts_task,deteccao de anomalias,resumo,resumo,"""Decentralized Continual Anomaly Detection""",reported,,,nao_revisado
+EM01-S0123,application_domain,sensoriamento industrial (WSN),resumo,resumo,"""Wireless Sensor Networks ... industrial and environmental applications""",reported,,,nao_revisado
+EM01-S0123,temporal_representation,sequencia/serie explicita,analise_llm_pdf,secao 4.2 p. 415,janelas ordenadas de fluxo multivariado,reported,,,nao_revisado
+EM01-S0123,series_dimensionality,multivariada,analise_llm_pdf,secao 4.2 p. 415,fluxo multivariado,reported,,,nao_revisado
+EM01-S0123,federated_topology,descentralizada (P2P/gossip),resumo,resumo,"""gossip-based knowledge fusion protocol ... eliminating the need for a central coordinator""",reported,,,nao_revisado
+EM01-S0123,federated_setting,nao identificada,analise_llm_pdf,dados/cenarios pp. 418-419,particao SWaT e fusao entre entradas distintas incertas na analise,unclear,,,nao_revisado
+EM01-S0123,approach_family,aprendizado continuo com replay,resumo,resumo,"""lightweight autoencoders with a replay-based memory buffer""",reported,,,nao_revisado
+EM01-S0124,ts_task,classificacao,analise_llm_pdf,secao V-F p. 7025,avaliacao federada altera distribuicoes locais e compara acuracia,interpreted,,,nao_revisado
+EM01-S0124,application_domain,benchmarks de fluxo (sem dominio unico),analise_llm_pdf,secao IV-B pp. 7021-7022,processamento ordenado de Sine/STAGGER,interpreted,,,nao_revisado
+EM01-S0124,temporal_representation,fluxo de dados ordenado,analise_llm_pdf,Alg. 3 pp. 7021-7022,fluxo ordenado com estatisticas de curto/longo prazo e esquecimento EWMA,reported,,,nao_revisado
+EM01-S0124,series_dimensionality,nao identificado nas fontes consultadas,analise_llm_pdf,,dimensionalidade nao registrada na analise,unclear,,,nao_revisado
+EM01-S0124,federated_topology,centralizada com agrupamento de clientes,analise_llm_pdf,Alg. 4 pp. 7022-7023,alerta provoca coleta de sketches; reagrupamento e FedAvg por grupo,reported,,,nao_revisado
+EM01-S0124,federated_setting,horizontal,analise_llm_pdf,Alg. 4 pp. 7022-7023,FedAvg por grupo sobre modelos de mesma estrutura; particao nao nomeada na analise,interpreted,,,nao_revisado
+EM01-S0124,approach_family,estimacao de densidade (sketch),resumo,resumo,"""Rotation Kernel Density Sketch (RKDS)""",reported,,,nao_revisado
+EM01-S0136,ts_task,outra (predicao de sobrevivencia),resumo,resumo,"""Federated Survival Prediction""",reported,,,nao_revisado
+EM01-S0136,application_domain,saude,resumo,resumo,"""Federated survival analysis in healthcare""",reported,,,nao_revisado
+EM01-S0136,temporal_representation,fluxo de dados ordenado,analise_llm_pdf,secao V-C/Fig. 3 p. 65; Alg. 4 p. 67,epocas populacionais ordenadas com novas coortes sinteticas,reported,,,nao_revisado
+EM01-S0136,series_dimensionality,nao identificado nas fontes consultadas,analise_llm_pdf,,unidade temporal e a coorte; dimensionalidade nao registrada,unclear,,,nao_revisado
+EM01-S0136,federated_topology,descentralizada (P2P/gossip),resumo,resumo,"""a peer-to-peer (P2P) framework in which clients adaptively select neighbors""",reported,,,nao_revisado
+EM01-S0136,federated_setting,horizontal,resumo,resumo,"""survival accuracy under concept drift at the center level""; centros com o mesmo modelo; particao nao nomeada",interpreted,,,nao_revisado
+EM01-S0136,approach_family,topologia P2P adaptativa,resumo,resumo,"""gain-driven link reassessment""",reported,,,nao_revisado
+EM01-S0138,ts_task,deteccao de intrusao,resumo,resumo,"""Real-Time Intrusion Detection in Fog Networks""",reported,,,nao_revisado
+EM01-S0138,application_domain,redes e seguranca (fog/IoT),resumo,resumo,"""fog networks ... Internet of Things (IoT) applications""",reported,,,nao_revisado
+EM01-S0138,temporal_representation,fluxo de dados ordenado,analise_llm_pdf,secao 2.2/3.2 p. 6,fluxo continuo por no com processamento sequencial e avaliacao por tick,reported,,,nao_revisado
+EM01-S0138,series_dimensionality,nao identificado nas fontes consultadas,analise_llm_pdf,,dimensionalidade nao registrada na analise,unclear,,,nao_revisado
+EM01-S0138,federated_topology,descentralizada (P2P/gossip),analise_llm_pdf,secao 3.3.4/Eqs. 26-31 pp. 12-14,cooperacao por gossip de estatisticas suficientes do bandit,reported,,,nao_revisado
+EM01-S0138,federated_setting,horizontal,analise_llm_pdf,secao 3.3.4 pp. 12-14,nos compartilham estatisticas de um mesmo modelo; particao nao nomeada na analise,interpreted,,,nao_revisado
+EM01-S0138,approach_family,aprendizado por reforco (bandit),resumo,resumo,"""Hierarchical Adaptive Thompson Sampling-Reinforcement Learning""",reported,,,nao_revisado
+EM01-S0150,ts_task,classificacao,analise_llm_pdf,secao V-A/Alg. 1 pp. 7115-7116; Figs. 4-5 p. 7122,previsao antes da atualizacao com avaliacao prequencial ao longo do fluxo,interpreted,,,nao_revisado
+EM01-S0150,application_domain,benchmarks de fluxo (sem dominio unico),resumo,resumo,"""real-world and synthetic datasets""",interpreted,,,nao_revisado
+EM01-S0150,temporal_representation,fluxo de dados ordenado,analise_llm_pdf,secao V-A/Alg. 1 pp. 7115-7116,distribuicao alternada de um fluxo preservando ordem relativa por cliente,reported,,,nao_revisado
+EM01-S0150,series_dimensionality,nao identificado nas fontes consultadas,analise_llm_pdf,Tabela I p. 7119,parte da Tabela I ilegivel na conversao,unclear,,,nao_revisado
+EM01-S0150,federated_topology,centralizada (servidor),analise_llm_pdf,secao IV p. 7115,coordenacao e modelo compartilhado; prototipos locais e globais,interpreted,,,nao_revisado
+EM01-S0150,federated_setting,horizontal,analise_llm_pdf,secao V-A pp. 7115-7116,um mesmo fluxo distribuido entre clientes; particao nao nomeada na analise,interpreted,,,nao_revisado
+EM01-S0150,approach_family,prototipos,resumo,resumo,"""dynamically maintaining a set of prototypes""",reported,,,nao_revisado
